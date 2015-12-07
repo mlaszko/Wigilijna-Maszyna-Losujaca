@@ -40,6 +40,10 @@ while badLottery:
         if users[i] == users2[i]:
             badLottery = True
             break
+        for j in range(2, len(users[i])):
+            if users[i][j] == users2[i][0]:
+                badLottery = True
+                break
 
 password = getpass.getpass()
 
